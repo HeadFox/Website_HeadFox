@@ -1,0 +1,71 @@
+<style is="custom-style">
+  html{
+    @apply(--paper-font-common-base);
+  }
+  h1{
+    font-size: 2em;
+  }
+  h2{
+    font-size: 1.8em;
+  }
+  
+  /****** HEADER ******/
+  header{
+    position: relative;
+  }
+  header h2{
+
+  }
+  .before_tabs{
+      @apply(--shadow-elevation-2dp);
+      background-color: #009688;
+  }
+
+  /** Main Navigation Bar **/
+
+  paper-tabs{
+    width: 40vw;
+    --paper-tabs-selection-bar-color: #FF5252;
+  }
+  paper-tab{
+    --paper-tab-ink: #FFFFFF;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  paper-fab{
+    @apply(--shadow-elevation-6dp);
+    transition: all 0.2s ease;
+    background-color: #FF5252;
+  }
+  paper-fab:hover{
+    @apply(--shadow-elevation-12dp);
+  }
+  /****** Content ******/
+  /** Page **/
+  iron-pages section article{
+    @apply(--shadow-elevation-2dp);
+    width: 95vw;
+    margin: 0 auto;
+  }
+  /** Personalisation **/
+  .personalize{
+    position: absolute;
+    right: 35px;
+    bottom: -28px;
+  }
+  .about{
+    height: 500px;
+    margin-bottom: 20px;
+  }
+  .cv{
+    padding: 40px 0 40px 0;
+    text-align: center;
+  }
+  .cv paper-fab{
+    margin-top: 40px;
+    display: inline-block;
+  }
+  footer{
+    background-color: #37474f
+  }
+</style>
